@@ -79,7 +79,9 @@ void TutorialApplication::createScene(void)
     }
 
     mTerrainGroup->freeTemporaryResources();
-    mTerrainGroup->freeTemporaryResources();
+
+    // --- Skydome
+    mSceneMgr->setSkyDome(true, "Examples/CloudySky", 5, 8);
 }
 void TutorialApplication::configureTerrainDefaults(Ogre::Light* light)
 {
